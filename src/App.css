@@ -1,0 +1,87 @@
+:root{
+    --bg-color :  #e7ddae;
+    --form-color:#FAEDCB;
+    --input-color: #fcf174;
+    --btn-color: #56abf0;
+    --txt-color: #250c71;
+    --err-color: red;
+}
+*{
+    background: var(--bg-color);
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+form{
+    border: solid 2px #060d4a;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:300px;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: var(--form-color);
+}
+.ul.form{
+    background-color: var(--form-color);
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    color: #060d4a;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+h1{
+    background-color: var(--form-color);
+    color: var(--txt-color);
+    margin:20px auto;
+    justify-content: center;
+}
+.ul.divider{
+    border: solid;
+    border-bottom: #060d4a;
+    margin-bottom: 20px ;
+    margin-top: 20px ;
+}
+
+.field{
+    margin: 25px auto;
+    background-color: var(--form-color);
+}
+label{
+    background-color: var(--form-color);
+}
+input{
+    background: var(--input-color);
+    padding: 5px;
+    font-size: 15px;
+    font-family: helvetica;
+    border: solid 2px var(--txt-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 98%;
+}
+
+input[type="email"]{
+    background: var(--input-color);
+    
+}
+input[type="password"]{
+    background: var(--input-color);
+   
+}
+.ui.button{
+    background-color: var(--btn-color);
+    color: antiquewhite;
+    border: 2px solid var(--btn-color);
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+input::after{
+    background-color: beige;
+}
